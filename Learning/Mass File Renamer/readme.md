@@ -13,9 +13,9 @@ This is a command-line tool written in Nim that renames all files in a specified
 2. Save the program in a file, e.g., `rename_files.nim`.
 3. Open a terminal and navigate to the directory containing the file.
 4. Compile the program using the Nim compiler:
-   thingshere
+   '''
    nim c -r rename_files.nim
-   thingshere
+   '''
 
 ## Usage
 1. Run the compiled program. 
@@ -25,33 +25,33 @@ This is a command-line tool written in Nim that renames all files in a specified
 
 ## Example
 **Input:**
-thingshere
+'''
 Enter the directory path:
 /path/to/your/files
 Enter the new base name for files:
 myfile
-thingshere
+'''
 
 **Output:**
-thingshere
+'''
 Renamed: /path/to/your/files/oldfile1.txt -> /path/to/your/files/myfile-1.txt
 Renamed: /path/to/your/files/oldfile2.jpg -> /path/to/your/files/myfile-2.jpg
 Error: Target file /path/to/your/files/myfile-2.jpg already exists. Skipping...
-thingshere
+'''
 
 ## Error Handling
 - If the directory does not exist, the program will display:
-  thingshere
+  '''
   Error: Directory does not exist.
-  thingshere
+  '''
 - If a file cannot be renamed, the program will display:
-  thingshere
+  '''
   Failed to rename: <file-path>
-  thingshere
+  '''
 - If a target file already exists, the program will skip it and display:
-  thingshere
+  '''
   Error: Target file <target-path> already exists. Skipping...
-  thingshere
+  '''
 
 ## Notes
 - This program only processes regular files. Directories within the target directory are ignored.
