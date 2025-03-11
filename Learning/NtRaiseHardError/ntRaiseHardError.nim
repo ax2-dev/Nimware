@@ -18,9 +18,10 @@ proc obfuscate*(s: string): string =
     resultStr.add((i.uint8 xor g_key.uint8).char)
   result = resultStr
 
-const nll = obfuscate("ntdll")
-const rap = obfuscate("RtlAdjustPrivilege")
-const correct = obfuscate("LOL")
+const
+  nll = obfuscate("ntdll")
+  rap = obfuscate("RtlAdjustPrivilege")
+  correct = obfuscate("LOL")
 
 proc RtAjPr(
   Privilege: ULONG,
